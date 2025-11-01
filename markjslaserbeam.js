@@ -263,7 +263,6 @@ export class MarkJSLaserbeam {
         }
 
         this.ctx.lineTo(x1, y1);
-        this.ctx.lineTo(x1, y1);
         this.ctx.stroke();
     }
 
