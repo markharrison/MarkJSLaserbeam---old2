@@ -1,4 +1,4 @@
-export class LaserbeamMark {
+export class MarkJSLaserbeam {
     constructor(canvas, options = {}) {
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
@@ -262,7 +262,6 @@ export class LaserbeamMark {
             this.ctx.lineTo(baseX + offsetX, baseY + offsetY);
         }
 
-        this.ctx.lineTo(x1, y1);
         this.ctx.lineTo(x1, y1);
         this.ctx.stroke();
     }
