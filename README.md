@@ -1,8 +1,8 @@
-# LaserbeamMark
+# MarkJSLaserbeam
 
 A powerful JavaScript class for creating stunning laser beam effects with multiple visual styles, particle systems, smooth animations, and support for multiple simultaneous laser beams. Perfect for games, interactive applications, and visual effects.
 
-![LaserbeamMark Multi-Laser Demo](demo.png)
+![MarkJSLaserbeam Multi-Laser Demo](demo.png)
 
 ## Features
 
@@ -21,17 +21,17 @@ A powerful JavaScript class for creating stunning laser beam effects with multip
 
 ### Installation
 
-Simply include the `laserbeammark.js` file in your project:
+Simply include the `markjslaserbeam.js` file in your project:
 
 ```javascript
-import { LaserbeamMark } from "./laserbeammark.js";
+import { MarkJSLaserbeam } from "./markjslaserbeam.js";
 ```
 
 ### Basic Usage
 
 ```javascript
 // Create a laser system (instantiate once)
-const laserSystem = new LaserbeamMark(canvas, {
+const laserSystem = new MarkJSLaserbeam(canvas, {
   beamStyle: "plasma",
   beamColor: "#00ffff",
   glowColor: "#00ffff",
@@ -61,7 +61,7 @@ laserSystem.fire(1); // Still works!
 
 ## Interactive Demo
 
-The repository includes a comprehensive interactive demo application (`index.html`) that showcases all LaserbeamMark features:
+The repository includes a comprehensive interactive demo application (`index.html`) that showcases all MarkJSLaserbeam features:
 
 **To run the demo:**
 
@@ -85,7 +85,7 @@ The demo features:
 
 For detailed developer documentation, API reference, and advanced usage examples, see:
 
-📖 **[LaserbeamMark Documentation](laserbeammark.md)**
+📖 **[MarkJSLaserbeam Documentation](markjslaserbeam.md)**
 
 The documentation covers:
 
@@ -97,14 +97,14 @@ The documentation covers:
 
 ## Files
 
-- `laserbeammark.js` - Main LaserbeamMark class
-- `laserbeammark.md` - Detailed developer documentation
+- `markjslaserbeam.js` - Main MarkJSLaserbeam class
+- `markjslaserbeam.md` - Detailed developer documentation
 - `index.html` - Interactive demo application
 - `README.md` - This overview
 
 ## Browser Compatibility
 
-LaserbeamMark uses ES6 modules and requires a modern browser with Canvas 2D support. The demo must be served through an HTTP server due to ES6 module security requirements.
+MarkJSLaserbeam uses ES6 modules and requires a modern browser with Canvas 2D support. The demo must be served through an HTTP server due to ES6 module security requirements.
 
 ## License
 

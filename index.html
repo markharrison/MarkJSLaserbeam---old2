@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaserbeamMark Test Application</title>
+    <title>MarkJSLaserbeam Test Application</title>
     <style>
         body {
             margin: 0;
@@ -166,7 +166,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>LaserbeamMark Test Application</h1>
+        <h1>MarkJSLaserbeam Test Application</h1>
 
         
         <div class="canvas-container">
@@ -297,7 +297,7 @@
     </div>
 
     <script type="module">
-        import { LaserbeamMark } from './laserbeammark.js';
+        import { MarkJSLaserbeam } from './markjslaserbeam.js';
         
         class LaserTestApp {
             constructor() {
@@ -313,7 +313,7 @@
             }
             
             initializeLaserSystem() {
-                this.laserSystem = new LaserbeamMark(this.canvas, {
+                this.laserSystem = new MarkJSLaserbeam(this.canvas, {
                     beamStyle: this.currentStyle,
                     coords1: [50, this.canvas.height / 2],
                     coords2: [this.canvas.width - 50, this.canvas.height / 2],

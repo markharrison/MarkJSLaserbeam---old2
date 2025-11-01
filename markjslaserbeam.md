@@ -1,14 +1,14 @@
-# LaserbeamMark Class Documentation
+# MarkJSLaserbeam Class Documentation
 
 A configurable laser beam effect system with multiple visual styles, particle effects, smooth animations, and support for multiple simultaneous laser beams.
 
 ## Basic Usage
 
 ```javascript
-import { LaserbeamMark } from './lib/laserbeammark.js';
+import { MarkJSLaserbeam } from './lib/markjslaserbeam.js';
 
 // Create a laser system (instantiate once)
-const laserSystem = new LaserbeamMark(canvas, {
+const laserSystem = new MarkJSLaserbeam(canvas, {
     beamStyle: 'solid',
     coords1: [50, 100],
     coords2: [400, 100],
@@ -42,9 +42,9 @@ laserSystem.fire(1);  // Still works!
 
 ## Multi-Laser System
 
-LaserbeamMark now supports multiple simultaneous laser beams following the ParticlesMark pattern:
+MarkJSLaserbeam now supports multiple simultaneous laser beams following the ParticlesMark pattern:
 
-- **Single Instance**: Create one `LaserbeamMark` instance per canvas
+- **Single Instance**: Create one `MarkJSLaserbeam` instance per canvas
 - **Multiple Lasers**: Use `addLaser()` to fire multiple beams with different positions and properties
 - **Automatic Management**: The system handles all active lasers automatically
 - **Memory Management**: Use `destroy()` to clean up all resources
@@ -313,7 +313,7 @@ Current opacity from 1 to 0 during the fade phase.
 
 ```javascript
 // Create the laser system once
-const laserSystem = new LaserbeamMark(canvas);
+const laserSystem = new MarkJSLaserbeam(canvas);
 
 // Fire multiple lasers at different positions
 laserSystem.addLaser(1, {
@@ -348,7 +348,7 @@ function gameLoop() {
 ### Crossfire Pattern
 
 ```javascript
-const laserSystem = new LaserbeamMark(canvas);
+const laserSystem = new MarkJSLaserbeam(canvas);
 
 // Diagonal from top-left to bottom-right
 laserSystem.addLaser(1, {
@@ -393,7 +393,7 @@ for (let i = 0; i < 5; i++) {
 ### Basic Horizontal Laser (Legacy Style)
 
 ```javascript
-const horizontalLaser = new LaserbeamMark(canvas, {
+const horizontalLaser = new MarkJSLaserbeam(canvas, {
     coords1: [0, 200],
     coords2: [canvas.width, 200],
     beamStyle: 'solid',
@@ -407,7 +407,7 @@ horizontalLaser.fire(1);
 ### Tazer Effect
 
 ```javascript
-const tazer = new LaserbeamMark(canvas, {
+const tazer = new MarkJSLaserbeam(canvas, {
     coords1: [100, 50],
     coords2: [300, 400],
     beamStyle: 'tazer',
@@ -423,7 +423,7 @@ const tazer = new LaserbeamMark(canvas, {
 ### Energy Orb Beam
 
 ```javascript
-const energyOrb = new LaserbeamMark(canvas, {
+const energyOrb = new MarkJSLaserbeam(canvas, {
     coords1: [200, 200],
     coords2: [600, 200],
     beamStyle: 'plasma',
@@ -438,7 +438,7 @@ const energyOrb = new LaserbeamMark(canvas, {
 ### Hot Laser Beam
 
 ```javascript
-const hotLaser = new LaserbeamMark(canvas, {
+const hotLaser = new MarkJSLaserbeam(canvas, {
     coords1: [50, 100],
     coords2: [750, 100],
     beamStyle: 'solid',
@@ -452,7 +452,7 @@ const hotLaser = new LaserbeamMark(canvas, {
 ### Plasma Cannon
 
 ```javascript
-const plasmaCannon = new LaserbeamMark(canvas, {
+const plasmaCannon = new MarkJSLaserbeam(canvas, {
     coords1: [playerX, playerY],
     coords2: [targetX, targetY],
     beamStyle: 'plasma',
@@ -467,7 +467,7 @@ const plasmaCannon = new LaserbeamMark(canvas, {
 ### Bidirectional Laser
 
 ```javascript
-const bidirectionalLaser = new LaserbeamMark(canvas, {
+const bidirectionalLaser = new MarkJSLaserbeam(canvas, {
     coords1: [100, 100],
     coords2: [500, 300],
     beamStyle: 'charged',
@@ -482,7 +482,7 @@ bidirectionalLaser.fire(0); // instant appear
 ### Custom Particles
 
 ```javascript
-const customLaser = new LaserbeamMark(canvas, {
+const customLaser = new MarkJSLaserbeam(canvas, {
     beamStyle: 'crackling',
     particleConfig: {
         color: '#ffff00',
@@ -501,7 +501,7 @@ const customLaser = new LaserbeamMark(canvas, {
 class GameScene {
     constructor() {
         // Create one laser system instance
-        this.laserSystem = new LaserbeamMark(this.canvas, {
+        this.laserSystem = new MarkJSLaserbeam(this.canvas, {
             beamStyle: 'plasma',
             coords1: [50, 150],
             coords2: [750, 150],

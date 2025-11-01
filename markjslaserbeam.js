@@ -1,4 +1,4 @@
-export class LaserbeamMark {
+export class MarkJSLaserbeam {
     constructor(canvas, options = {}) {
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
