@@ -64,6 +64,10 @@ See [laserbeammark.md](./markjslaserbeam.md) for detailed developer documentatio
 
 Open `index.html` in your browser to explore and test laser beam effects and customization options.
 
+<img width="1251" height="1236" alt="image" src="https://github.com/user-attachments/assets/f8e7fa23-764f-410a-b226-86fb64f90efe" />
+
+
 ## License
 
 MIT License - see [LICENSE](./LICENSE) for details.
+
